@@ -1,38 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 .App {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custompagination {
+  color: #115293;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::placeholder {
+  color: #115293;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.showingPage {
+  font-size: small;
+}
+
+.table-container {
+  height: 30em;
+}
+table {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+table thead {
+  flex: 0 0 auto;
+  width: calc(100% - 0.9em);
+  background-color: #115293;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+table tbody {
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: scroll;
+}
+table tbody tr {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+}
+table thead,
+table tbody tr {
+  display: table;
+  table-layout: fixed;
+  border-bottom: 1px solid #dddddd;
 }
 
-.App-link {
-  color: #61dafb;
+.table-container {
+  padding: 0.3em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(39, 117, 136, 0.6);
+  text-align: center;
+}
+table td,
+table th {
+  padding: 0.3em;
+  padding: 12px 15px;
+}
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }

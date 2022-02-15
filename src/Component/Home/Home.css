@@ -1,0 +1,21 @@
+.search {
+    
+    width: 100%;
+   
+ 
+   
+  }
+  .search2 {
+    
+    
+    width: 100%;
+    padding-top: 1px;   
+  }
+  input:focus{
+    outline: none;
+}
+input {
+    border: none;
+    background-color: transparent;
+ }
+  
