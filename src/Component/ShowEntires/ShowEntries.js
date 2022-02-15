@@ -5,7 +5,7 @@ const ShowEntries = ({setSize,totalItems}) => {
   while(totalItems>=10) {
       console.log(totalItems);
       totalItems/=2;
-      if(totalItems>=5)selectItem.push(Math.round(totalItems));
+      if(totalItems>=10)selectItem.push(Math.round(totalItems));
   }
   console.log("srf",selectItem);
   selectItem.sort((a,b)=>{return a-b});

@@ -12,7 +12,7 @@ const [totalPages,setTotalPages]=useState(0);
 const [filteredData, setFilteredData] = useState([]);
 const [wordEntered, setWordEntered] = useState("");
 const [page, setPage] = useState(1);
-const [size,setSize]=useState(5);
+const [size,setSize]=useState(10);
 
 const handleChange = (event, value) => {
        setPage(value);
